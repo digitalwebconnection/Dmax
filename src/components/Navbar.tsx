@@ -7,6 +7,7 @@ import React from "react";
 const links = [
   { name: "Home",     href: "#home" },
   { name: "About",    href: "/about" },
+   { name: "Project",    href: "/project" },
   { name: "Services", href: "#services" },
 ];
 
