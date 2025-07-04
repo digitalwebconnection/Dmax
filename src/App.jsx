@@ -1,12 +1,25 @@
+import Navbar from "./Navbar";
+import React from 'react';
+
 export default function App() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 p-8">
-      <h1 className="mb-4 text-5xl font-extrabold tracking-tight text-white drop-shadow-lg">
-        React × Vite × Tailwind v4
-      </h1>
-      <p className="text-center text-lg text-white/90">
-        Edit <code>src/App.jsx</code> and save to reload&nbsp;✨
-      </p>
-    </main>
+    <>
+      <Navbar />
+
+      {/* Hero section (example) */}
+      <section
+        id="home"
+        className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 p-8 text-center"
+      >
+        <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-6xl">
+          Powering the Future with Clean Energy
+        </h1>
+      </section>
+
+      {/* Dummy sections to show scrolling */}
+      <section id="about" className="h-screen bg-white">…</section>
+      <section id="services" className="h-screen bg-gray-50">…</section>
+      <section id="contact" className="h-screen bg-white">…</section>
+    </>
   );
 }
