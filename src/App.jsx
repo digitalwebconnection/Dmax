@@ -6,8 +6,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 
-import AboutUs from "./components/AboutUs";
-import ContactUs from "./components/Contact/ContactUs";
+// import AboutUs from "./components/AboutUs";
+// import ContactUs from "./components/Contact/ContactUs";
 import Project from "./components/Projects/Projects"
 
 // import Project from "./components/Project/Project";
@@ -23,10 +23,10 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/"         element={<Home />} />p
-        <Route path="/about"    element={<AboutUs />} />
+        <Route path="/"         element={<Home />} />
+        {/* <Route path="/about"    element={<AboutUs />} /> */}
           <Route path="/projects"  element={<Project />} />
-           <Route path="/contact"  element={<ContactUs/>}/> 
+           {/* <Route path="/contact"  element={<ContactUs/>}/>  */}
         {/* 
       
         <Route path="/service"  element={<Service />} />
