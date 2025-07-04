@@ -6,8 +6,8 @@ import React from "react";
 // Edit or extend as you like
 const links = [
   { name: "Home",     href: "#home" },
-  { name: "About",    href: "/about" },
-   { name: "Project",    href: "/projects" },
+  { name: "About",    href: "#about" },
+   { name: "Project",    href: "#projects" },
   { name: "Services", href: "#services" },
 ];
 
@@ -46,7 +46,7 @@ export default function Navbar() {
           <div className="flex justify-end">
             {/* Desktop CTA */}
             <a
-              href="/contact"
+              href="#contact"
               className="hidden rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-indigo-500 md:inline-block"
             >
               Contact&nbsp;Us
