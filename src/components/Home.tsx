@@ -16,7 +16,7 @@ import {
   ChevronRight,
   Users2,
 } from "lucide-react";
-
+import react from "react";
 
 /* ---------------------------------------------------------------------------
     DATA
@@ -344,6 +344,7 @@ const HomePage: React.FC = () => {
                 <button
                   key={idx}
                   onClick={() => setActiveIndex(idx)}
+                  title={`Go to service ${services[idx].title}`}
                   className={`h-3 w-3 rounded-full ${idx === activeIndex ? "bg-white" : "bg-gray-400"
                     }`}
                 />
