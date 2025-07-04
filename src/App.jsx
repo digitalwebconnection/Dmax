@@ -7,7 +7,8 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 
 import AboutUs from "./components/AboutUs";
-import  Project from "./components/Projects/Projects"
+import ContactUs from "./components/Contact/ContactUs";
+
 // import Project from "./components/Project/Project";
 // import Service from "./components/Service/Service";
 
