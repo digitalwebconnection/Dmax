@@ -1,25 +1,38 @@
-import Navbar from "./Navbar";
+// src/App.tsx
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from 'react';
 
-export default function App() {
+// import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
+import Home from "./components/Home";
+
+// import AboutUs from "./components/About/AboutUs";
+// import Project from "./components/Project/Project";
+// import Service from "./components/Service/Service";
+
+// import Careers from "./components/Careers/Careers";
+// import ContactUs from "./components/Contact/ContactUs";
+
+
+function App() {
   return (
-    <>
-      <Navbar />
+    <Router>
+      {/* <Navbar /> */}
 
-      {/* Hero section (example) */}
-      <section
-        id="home"
-        className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 p-8 text-center"
-      >
-        <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-6xl">
-          Powering the Future with Clean Energy
-        </h1>
-      </section>
+      <Routes>
+        <Route path="/"         element={<Home />} />
+        {/* <Route path="/about"    element={<AboutUs />} />
+        <Route path="/project"  element={<Project />} />
+        <Route path="/service"  element={<Service />} />
+        <Route path="/careers"  element={<Careers/>}/>
 
-      {/* Dummy sections to show scrolling */}
-      <section id="about" className="h-screen bg-white">…</section>
-      <section id="services" className="h-screen bg-gray-50">…</section>
-      <section id="contact" className="h-screen bg-white">…</section>
-    </>
+        <Route path="/contact"  element={<ContactUs/>}/> */}
+
+      </Routes>
+
+      {/* <Footer /> */}
+    </Router>
   );
 }
+
+export default App;
