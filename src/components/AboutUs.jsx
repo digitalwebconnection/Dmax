@@ -143,7 +143,7 @@ export default function AboutUs() {
       {/* ---------- MISSION & VISION ---------- */}
       <section className="mx-auto max-w-7xl space-y-10 py-16 bg-white">
         {/* Mission */}
-        <figure className="relative h-[300px] overflow-hidden rounded-xl md:h-[360px]">
+        {/* <figure className="relative h-[300px] overflow-hidden rounded-xl md:h-[360px]">
           <img
             src="https://media.istockphoto.com/id/1455358887/photo/aerial-view-of-large-electrical-power-plant-with-many-rows-of-solar-photovoltaic-panels-for.jpg"
             alt="Mission"
@@ -159,7 +159,7 @@ export default function AboutUs() {
               communities to embrace a cleaner, greener future.
             </p>
           </figcaption>
-        </figure>
+        </figure> */}
 
         {/* Vision */}
         <figure className="relative h-[300px] overflow-hidden rounded-xl md:h-[360px]">
