@@ -8,6 +8,7 @@ import Home from "./components/Home";
 
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/Contact/ContactUs";
+import Project from "./components/Projects/Projects"
 
 // import Project from "./components/Project/Project";
 // import Service from "./components/Service/Service";
@@ -24,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/"         element={<Home />} />
         <Route path="/about"    element={<AboutUs />} />
-          <Route path="/project"  element={<Project />} />
+          <Route path="/projects"  element={<Project />} />
            <Route path="/contact"  element={<ContactUs/>}/> 
         {/* 
       
