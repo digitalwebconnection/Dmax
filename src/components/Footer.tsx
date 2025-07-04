@@ -4,7 +4,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
   FaYoutube,
-} from "react-icons/fa";          // npm i react-icons
+} from "react-icons/fa";         
 import React from "react";
 export default function Footer() {
   return (

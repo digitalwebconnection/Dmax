@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 
-// import AboutUs from "./components/About/AboutUs";
+import AboutUs from "./components/AboutUs";
 // import Project from "./components/Project/Project";
 // import Service from "./components/Service/Service";
 
@@ -21,7 +21,8 @@ function App() {
 
       <Routes>
         <Route path="/"         element={<Home />} />
-        {/* <Route path="/about"    element={<AboutUs />} />
+        <Route path="/about"    element={<AboutUs />} />
+        {/* 
         <Route path="/project"  element={<Project />} />
         <Route path="/service"  element={<Service />} />
         <Route path="/careers"  element={<Careers/>}/>
