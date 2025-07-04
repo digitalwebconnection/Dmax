@@ -6,15 +6,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 
-// import AboutUs from "./components/AboutUs";
-// import ContactUs from "./components/Contact/ContactUs";
 import Project from "./components/Projects/Projects"
+import AboutUs from "./components/AboutUs";
 
-// import Project from "./components/Project/Project";
-// import Service from "./components/Service/Service";
 
-// import Careers from "./components/Careers/Careers";
-// import ContactUs from "./components/Contact/ContactUs";
 
 
 function App() {
@@ -24,15 +19,9 @@ function App() {
 
       <Routes>
         <Route path="/"         element={<Home />} />
-        {/* <Route path="/about"    element={<AboutUs />} /> */}
           <Route path="/projects"  element={<Project />} />
-           {/* <Route path="/contact"  element={<ContactUs/>}/>  */}
-        {/* 
-      
-        <Route path="/service"  element={<Service />} />
-        <Route path="/careers"  element={<Careers/>}/>
-
-        <Route path="/contact"  element={<ContactUs/>}/> */}
+          <Route path="/about"      element={<AboutUs />} />
+   
 
       </Routes>
 
