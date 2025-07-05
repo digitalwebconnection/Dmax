@@ -32,7 +32,7 @@ const VISION_IMG =
   "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=60";
 
 const VALUES_IMG =
-  "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=60";
+  "https://media.istockphoto.com/id/1405880267/photo/two-engineers-installing-solar-panels-on-roof.jpg?s=612x612&w=0&k=20&c=OvQDbJaTnMM4jPfIA3y5vrO88i98NZJRahZtnYFZCq0=";
 
 const STATS = [
   { count: 12, suffix: "+ yrs", label: "Industry Experience" },
@@ -118,6 +118,7 @@ export default function AboutUs() {
   }, []);
 
   return (
+    <>
     <div className="text-gray-800 bg-white leading-relaxed">
       {/* — HERO — */}
       <header
@@ -133,7 +134,8 @@ export default function AboutUs() {
           </p>
         </div>
       </header>
-
+      </div>
+    <div className="text-gray-800 bg-white leading-relaxed mx-auto max-w-7xl">
       {/* — OUR STORY — */}
       <section className="grid items-center gap-10 py-16 px-6 md:px-12 lg:grid-cols-2">
         <img
@@ -173,12 +175,12 @@ export default function AboutUs() {
       </section>
 
       {/* — VISION — */}
-      <section className="grid items-center gap-10 py-16 px-6 md:px-12 lg:grid-cols-2">
+      <section className="grid items-center gap-10 py-16  md:px-12 lg:grid-cols-2 ">
         <img
           ref={visionImg}
           src={VISION_IMG}
           alt="Visionary sunrise"
-          className="rounded-3xl shadow-lg"
+          className="rounded-3xl shadow-lg h-98 w-full"
         />
         <div>
           <h3 className="mb-4 flex items-center gap-3 text-2xl font-semibold">
@@ -210,13 +212,13 @@ export default function AboutUs() {
       </section>
 
       {/* — VALUES — */}
-      <section className="py-16 px-6 text-center bg-gray-50 md:px-12">
+      <section className="py-16 text-center bg-gray-50 md:px-12 ">
         <h2 className="mb-10 text-3xl font-bold md:text-4xl">Our Values</h2>
         <img
           ref={valuesImg}
           src={VALUES_IMG}
           alt="Teamwork illustration"
-          className="mx-auto mb-12 max-w-xl rounded-3xl shadow-lg"
+          className="mx-auto mb-12 max-w-xl rounded-3xl shadow-lg h-98 w-full"
         />
         <div className="mx-auto grid max-w-5xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {VALUES.map(({ icon, title }) => (
@@ -249,5 +251,6 @@ export default function AboutUs() {
         <div className="pointer-events-none absolute inset-0 rotate-2 bg-gradient-to-tr from-white/10 to-white/5" />
       </section>
     </div>
+    </>
   );
 }
